@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proiect.RomaniaPopulation">
+	<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <ScrollView>
+  <!--<StackLayout Orientation="Horizontal" Padding="20" Spacing="10">
+    <StackLayout Orientation="Horizontal" >
+      <Image Source="ro.png"/>
+        <Picker Title="Year" x:Name="yearPopulationPicker" 
+            BackgroundColor="Green"
+            HorizontalOptions="FillAndExpand"
+            WidthRequest="90" HeightRequest="60"
+            VerticalOptions="Start"/>
+    </StackLayout>
+    <Button Text="Find out!" 
+            Clicked="OnFindOutClicked"
+            HorizontalOptions="FillAndExpand"
+            WidthRequest="90" HeightRequest="60"
+            VerticalOptions="Start"/>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Total Romania's Population is "
+             WidthRequest="100" HeightRequest="60"
+             x:Name="populationLabel"
+             HorizontalOptions="Center"/>
+      
+    </StackLayout>
+    <StackLayout Orientation="Horizontal"  Padding="20" Spacing="10">
+      <Button Text="Determine tomorrow's population"
+              Clicked="OnTomorrowClicked"
+              WidthRequest="60" HeightRequest="60"
+              HorizontalOptions="Start"/>
+      <Label Text=""
+             x:Name="tomorrowLabel"/>
+    </StackLayout>
+   
+  </StackLayout>-->
+    <StackLayout Spacing="0" Padding="0" BackgroundColor="#FFF9C4">
+      <StackLayout Orientation="Horizontal">
+        <Image Source="ro.png"/>
+        <Picker Title="Year" x:Name="yearPopulationPicker"
+                TextColor="Black"
+                HorizontalOptions="Start" 
+                VerticalOptions="Center" WidthRequest="100"/>
+        <Label Text="Total Romania's Population is "  x:Name="populationLabel" 
+               FontSize="14"
+               HorizontalOptions="FillAndExpand" TextColor="Black"  />
+      </StackLayout>
+      <StackLayout Orientation="Horizontal">
+        <Button Text="Find out!"
+               BackgroundColor="#03A9F4"
+               Clicked="OnFindOutClicked"
+               HorizontalOptions="FillAndExpand"
+               WidthRequest="90" HeightRequest="60"
+               
+               TextColor="Black"
+               VerticalOptions="Center"/>
+      </StackLayout>
+    </StackLayout>
+</ScrollView>
+</ContentPage>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proiect.AboutPage"
+             Title="World Population">
+  <StackLayout Spacing="0" Padding="5" BackgroundColor="#FFF9C4"
+               >
+    <Image Source="ic_language_black.png"/>
+    <Label Text="This application uses  World Population API, which can be found at: https://github.com/worldpopulation/population.io-api/tree/master/modeling."
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="Start"
+           TextColor="Black"/>
+    <Label Text="Population.io uses official demographic data produced by the United Nations and published in the World Population Prospects (see data sources for details) most of which is available in annual or 5-year cycles. Population.io uses the past estimates for 1950-2010 and the medium population projection up to 2100 and interpolates the distribution daily for the World and for 200 countries (excluding few countries with small population size) and uses the UN’s estimates and projections of life tables for interpolating individual life expectancy by date and place of birth."
+           HorizontalOptions="FillAndExpand"
+           TextColor="Black"/>
+    
+  </StackLayout>
+</ContentPage>

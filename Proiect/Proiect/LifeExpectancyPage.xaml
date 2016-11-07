@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proiect.LifeExpectancyPage">
+	<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout Spacing="0" Padding="0" BackgroundColor="#FFF9C4">
+   
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Sex"
+             TextColor="Black"
+             HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
+      <Picker Title="Sex" x:Name="genderPicker"
+               TextColor="Black"
+               HorizontalOptions="FillAndExpand"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Country (ex: Albania)"
+             TextColor="Black"
+             HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
+      <Entry HorizontalOptions="FillAndExpand" Text="" TextColor="Black"
+             x:Name="countryEntry"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+      <Label Text="Date of birth (yyyy-mm-dd)"
+             TextColor="Black"
+             HorizontalOptions="Start" VerticalOptions="Center" WidthRequest="100"/>
+      <Entry HorizontalOptions="FillAndExpand" Text="" TextColor="Black"
+             x:Name="birthEntry"/>
+
+    </StackLayout>
+    <StackLayout>
+      <Button Text="Calculate your life expectancy!"
+              TextColor="Black"
+              BackgroundColor="#03A9F4" 
+              Clicked="OnCalculateClicked"/>
+      <Label Text="" TextColor="Black"
+             x:Name="ageLabel"/>
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

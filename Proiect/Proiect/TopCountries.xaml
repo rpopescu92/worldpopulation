@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proiect.TopCountries">
+  <StackLayout Spacing="0" Padding="0" BackgroundColor="#FFF9C4">
+    <Label Text="Top Population" VerticalOptions="Center" HorizontalOptions="Center" />
+    <ListView x:Name="listViewCountriesTop" BackgroundColor="#FFF9C4">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal">
+              <Label Text="{Binding CountryName}" HorizontalOptions="FillAndExpand"
+                     TextColor="Black"/>
+              <Label Text="{Binding Population}" HorizontalOptions="FillAndExpand"
+                     TextColor="Black"/>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
+</ContentPage>

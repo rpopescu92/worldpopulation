@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Proiect"
+             x:Class="Proiect.MainPage"
+             Title="World Population">
+
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Name = "Ro Stats" Clicked="OnRomaniaClicked"></ToolbarItem>
+    <ToolbarItem Name = "Top 5" Clicked="OnTopClicked"></ToolbarItem>
+    <ToolbarItem Name = "Life Expectancy" Clicked="OnLifeExpecClicked"></ToolbarItem>
+    <ToolbarItem Name = "About" Clicked="OnAboutClicked"></ToolbarItem>
+  </ContentPage.ToolbarItems>
+
+  <StackLayout Spacing="0" Padding="0" BackgroundColor="#FFF9C4">
+  <ListView x:Name="listViewCountries"  ItemSelected="OnItemSelected" >
+    <ListView.ItemTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+  </StackLayout>
+</ContentPage>
